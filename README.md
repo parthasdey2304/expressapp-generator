@@ -34,7 +34,7 @@ chmod +x setup.sh
 ```
 
 # Usage
-+ Locate to the directory where the git project has been initialised..
++ Create a directory where you want to store the express application.
 + Type **express** and see the script do all the magic for you...
 ```
 express
