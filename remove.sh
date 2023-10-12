@@ -47,3 +47,4 @@ echo -e '\e[0m'
 sudo rm -rf /bin/express
 
 echo -e '\e[31mDependencies have been successfully removed!!\e[0m'
+echo -e '\e[32mWe hope to see you again. Roger!!\e[0m'
