@@ -47,7 +47,7 @@ cat <<EOL >> views/index.ejs
 EOL
 
 #Updating the package.json file to add the test command nodemon index.js
-jq '.scripts += { test: "nodemon index.js" }' package.json > tmp.json && mv tmp.json package.json
+#jq '.scripts += { test: "nodemon index.js" }' package.json > tmp.json && mv tmp.json package.json
 
 echo -e '\e[32mExpress app has been initialized...'
 echo -e '\e[32mRun the command \e[31m npm run dev \e[32m to start the Express server...'
