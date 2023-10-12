@@ -2,7 +2,7 @@
 
 figlet E X P R E S S
 echo -e '\e[32mGenerating the Express app...\e[0m'
-echo -e '\e[34mCreate the package.json file...\e[0m'
+echo -e '\e[34mCreating the package.json file...\e[0m'
 npm init -y
 
 echo -e '\e[34mInstalling the dependencies and creating the node_modules folder...\e[0m'
@@ -46,6 +46,10 @@ cat <<EOL >> views/index.ejs
 </html>
 EOL
 
+#Updating the package.json file to add the test command nodemon index.js
+jq '.scripts += { test: "nodemon index.js" }' package.json > tmp.json && mv tmp.json package.json
+
 echo -e '\e[32mExpress app has been initialized...'
 echo -e '\e[32mRun the command \e[31m npm run dev \e[32m to start the Express server...'
 echo -e '\e[34mHappy hacking!!!\e[0m'
+

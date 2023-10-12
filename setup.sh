@@ -31,8 +31,8 @@ clear
 figlet G i t !
 
 echo -e '\e[32mGetting things ready for you...\e[0m'
-sudo cp commit /bin
-sudo chmod +x /bin/commit
+sudo cp express /bin
+sudo chmod +x /bin/express
 
 echo -e '\e[32mInstalling successful you are good to go!!!!!\e[0m'
 echo -e '\e[34m[INFO] Type \e[35mexpress\e[34m in the directory where you want to make the express app and see the script do the stuff for you...\e[0m'
