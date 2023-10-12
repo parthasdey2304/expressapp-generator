@@ -1,0 +1,51 @@
+#!/bin/bash
+
+figlet E X P R E S S
+echo -e '\e[32mGenerating the Express app...\e[0m'
+echo -e '\e[34mCreate the package.json file...\e[0m'
+npm init -y
+
+echo -e '\e[34mInstalling the dependencies and creating the node_modules folder...\e[0m'
+npm install express ejs nodemon
+
+echo -e '\e[34mCreating the directory structure...\e[0m'
+sleep 1
+touch index.js
+
+# Write the Express app template to index.js
+cat <<EOL >> index.js
+const express = require('express');
+const app = express();
+const port = 3000;
+
+app.set('view engine', 'ejs');
+
+app.get('/', (req, res) => {
+  res.render('index');
+});
+
+app.listen(port, () => {
+  console.log(\`Server is running on port \${port}\`);
+});
+EOL
+
+mkdir public
+mkdir views
+touch views/index.ejs
+
+# Write the boilerplate to index.ejs
+cat <<EOL >> views/index.ejs
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Express App</title>
+</head>
+<body>
+  <h1>Express App Server Running</h1>
+</body>
+</html>
+EOL
+
+echo -e '\e[32mExpress app has been initialized...'
+echo -e '\e[32mRun the command \e[31m npm run dev \e[32m to start the Express server...'
+echo -e '\e[34mHappy hacking!!!\e[0m'
