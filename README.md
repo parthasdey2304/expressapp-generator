@@ -50,6 +50,19 @@ chmod +x remove.sh
 ./remove.sh
 ```
 
+# Directory Structure
+```
+.
+|-- index.js
+|-- node_modules
+|-- package-lock.json
+|-- package.json
+|-- public
+`-- views
+    `-- index.ejs
+
+4 directories, 4 files
+```
 # Screenshots
 + ## Installation
 ![image](https://github.com/parthasdey2304/expressapp-generator/assets/131694386/3cdc3633-37f2-4471-8054-214714a66102)
