@@ -52,9 +52,14 @@ chmod +x remove.sh
 
 # Screenshots
 + ## Installation
+![image](https://github.com/parthasdey2304/expressapp-generator/assets/131694386/3cdc3633-37f2-4471-8054-214714a66102)
 
 + ## Uninstalling
-![image](https://github.com/parthasdey2304/expressapp-generator/assets/131694386/b621b9aa-7fd8-487d-a8e3-dd9915937cef)
+![image](https://github.com/parthasdey2304/expressapp-generator/assets/131694386/97c493df-b6cb-4cbe-96ad-cdf3c44457f5)
+
++ ## Usage
+![image](https://github.com/parthasdey2304/expressapp-generator/assets/131694386/fdf6db08-ab1a-409f-9b90-a10ad1c8996f)
+
 
 
 # Contributing
