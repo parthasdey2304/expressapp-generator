@@ -1,6 +1,13 @@
 #!/bin/bash
 
 figlet E X P R E S S
+
+echo -e '\e[32mFolder name (Ex : my_app) : '
+read folder_name
+
+mdkir "$folder_name"
+cd "$folder_name"
+
 echo -e '\e[32mGenerating the Express app...\e[0m'
 echo -e '\e[34mCreating the package.json file...\e[0m'
 npm init -y
