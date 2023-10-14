@@ -54,7 +54,7 @@ chmod +x remove.sh
 ```
 .
 |-- index.js
-|-- node_modules
+|-- node_modules/
 |-- package-lock.json
 |-- package.json
 |-- public
