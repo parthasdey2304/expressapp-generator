@@ -34,14 +34,13 @@ chmod +x setup.sh
 ```
 
 # Usage
-+ Create a directory where you want to store the express application.
 + Type **express** and see the script do all the magic for you...
 ```
 express
 ```
 
 # Uninstalling
-+ Locate to the directory with the github-upload-script
++ Locate to the directory with the expressapp-generator
 + Make the **remove.sh** file executable..
 ```
 chmod +x remove.sh
@@ -50,6 +49,13 @@ chmod +x remove.sh
 ```
 ./remove.sh
 ```
+
+# Screenshots
++ ## Installation
+
++ ## Uninstalling
+![image](https://github.com/parthasdey2304/expressapp-generator/assets/131694386/b621b9aa-7fd8-487d-a8e3-dd9915937cef)
+
 
 # Contributing
 We welcome contributions from the community! We welcome your contributions to improve the project. If you'd like to contribute to expressapp-generator, please read the following guidelines on how to contribute:
