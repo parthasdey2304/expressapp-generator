@@ -73,5 +73,5 @@ cat <<EOL >> views/index.ejs
 EOL
 
 echo -e '\e[32m[INFO] Express app has been initialized...'
-echo -e '\e[32m[INFO] Run the command \e[31mcd $folder_name & npm run dev \e[32m to start the Express server...'
+echo -e "\e[32m[INFO] Run the command \e[31mcd $folder_name & npm run dev \e[32m to start the Express server..."
 echo -e '\e[31mHappy hacking!!!\e[0m'
