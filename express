@@ -2,7 +2,7 @@
 
 figlet E X P R E S S
 
-echo -e '\e[32mFolder name (e.g., my_app): '
+echo -n -e '\e[32mEnter the folder name (e.g. : my_app): '
 read folder_name
 
 mkdir "$folder_name"
@@ -40,7 +40,7 @@ touch index.js
 cat <<EOL >> index.js
 const express = require('express');
 const app = express();
-const port = 3000;
+const port = 8080;
 
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
