@@ -39,6 +39,7 @@ touch index.js
 # Write the Express app template to index.js
 cat <<EOL >> index.js
 const express = require('express');
+const path = require('path');
 const app = express();
 const port = 8080;
 
