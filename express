@@ -52,7 +52,7 @@ app.get('/', (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`[INFO] Expres app is running on http://localhost:${port}`);
+  console.log(\`[INFO] Express app is running on http://localhost:\${port}\`);
 });
 EOL
 
