@@ -1,6 +1,6 @@
 #!/bin/bash
 
-clear
+
 figlet E x p r e s s
 echo -e '\e[31m[INFO] Removing all the dependencies...'
 
