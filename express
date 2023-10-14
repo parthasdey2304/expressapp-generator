@@ -2,20 +2,37 @@
 
 figlet E X P R E S S
 
-echo -e '\e[32mFolder name (Ex : my_app) : '
+echo -e '\e[32mFolder name (e.g., my_app): '
 read folder_name
 
 mkdir "$folder_name"
 cd "$folder_name"
 
-echo -e '\e[32mGenerating the Express app...\e[0m'
-echo -e '\e[34mCreating the package.json file...\e[0m'
-npm init -y
+echo -e '\e[32m[INFO] Generating the Express app...\e[0m'
+echo -e '\e[32m[INFO] Creating package.json...\e[0m'
 
-echo -e '\e[34mInstalling the dependencies and creating the node_modules folder...\e[0m'
+sleep 1
+
+# Create package.json manually with the specified folder_name
+cat <<EOL > package.json
+{
+  "name": "$folder_name",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}
+EOL
+
+echo -e '\e[34m[INFO] Installing the dependencies and creating the node_modules folder...\e[0m'
 npm install express ejs nodemon
 
-echo -e '\e[34mCreating the directory structure...\e[0m'
+echo -e '\e[34m[INFO] Creating the directory structure...\e[0m'
 sleep 1
 touch index.js
 
@@ -26,6 +43,8 @@ const app = express();
 const port = 3000;
 
 app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, 'views'));
+app.use(express.static(path.join(_dirname, 'public')));
 
 app.get('/', (req, res) => {
   res.render('index');
@@ -53,10 +72,6 @@ cat <<EOL >> views/index.ejs
 </html>
 EOL
 
-#Updating the package.json file to add the test command nodemon index.js
-#jq '.scripts += { test: "nodemon index.js" }' package.json > tmp.json && mv tmp.json package.json
-
-echo -e '\e[32mExpress app has been initialized...'
-echo -e '\e[32mRun the command \e[31m npm run dev \e[32m to start the Express server...'
-echo -e '\e[34mHappy hacking!!!\e[0m'
-
+echo -e '\e[32m[INFO] Express app has been initialized...'
+echo -e '\e[32m[INFO] Run the command \e[31mcd $folder_name & npm run dev \e[32m to start the Express server...'
+echo -e '\e[31mHappy hacking!!!\e[0m'
