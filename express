@@ -2,7 +2,7 @@
 
 figlet E X P R E S S
 
-echo -n -e '\e[32mEnter the folder name (e.g. : my_app): '
+echo -n -e '\e[32mEnter the folder name (e.g. : my_app): \e[0m'
 read folder_name
 
 mkdir "$folder_name"
