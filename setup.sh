@@ -28,7 +28,7 @@ exit 1
 fi
 
 clear
-figlet G i t !
+figlet E x p r e s s
 
 echo -e '\e[32mGetting things ready for you...\e[0m'
 sudo cp express /bin
