@@ -1,5 +1,13 @@
-# expressapp-generator
+<img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=280&width=100%&section=header&text=ExpressApp%20Generator&fontColor=ffffff&fontAlignY=38&desc=Create%20Express%20Apps%20with%20Ease!&descAlignY=58&descAlign=77"/>
+<!--
+<div align="center" style="display: flex; align-items: center;">
+    <img src="https://media.zeemly.com/zeemly/product/expressjs.png" height="70px" width="70px">
+    <img src="https://hunvikran.com/cf913722-c61b-409c-a33f-f0fddcd9304b.png" height="70px" width="70px" style="background-color: #fff; border-radius: 50px">
+</div>
+<h1 align="center">ExpressApp Generator</h1>
 This is a script to easily make express app on linux with one command!!
+-->
+
 
 # Pre-requisites
 + You need to install Github in Debian based: 
