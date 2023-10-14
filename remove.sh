@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-figlet E x p r e s s
+figlet E X P R E S S
 echo -e '\e[31m[INFO] Removing all the dependencies...'
 
 progress_bar() {
