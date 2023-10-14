@@ -28,9 +28,7 @@ exit 1
 fi
 
 clear
-figlet E x p r e s s
-
-echo -e '\e[32mGetting things ready for you...\e[0m'
+figlet E X P R E S S
 sudo cp express /bin
 sudo chmod +x /bin/express
 
