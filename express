@@ -1,5 +1,58 @@
 #!/bin/bash
 
+if [[ "$1" == "-h" || "$1" == "--help" ]]; then
+    cat <<EOL
+
+Express Script Manual
+
+Usage:
+  express [OPTIONS]
+
+Description:
+  This script initializes an Express.js application boilerplate in a specified folder.
+
+Options:
+  -h, --help
+    Display this manual and usage instructions.
+
+  <folder_name>
+    Specify the name of the folder where the Express.js app will be generated.
+
+Examples:
+  1. To generate an Express.js app in a folder named "my_app":
+     \$ express my_app
+
+  2. Display this manual and usage instructions:
+     \$ express -h
+     or
+     \$ express --help
+
+Instructions:
+  To create a new Express.js app, provide a folder name as an argument. The script will create the necessary files and directory structure to set up a basic Express.js application.
+
+  The generated folder will contain:
+  - \`package.json\` with necessary dependencies and scripts.
+  - \`index.js\` with a basic Express.js server setup.
+  - \`views\` folder with an \`index.ejs\` template.
+  - \`public\` folder for static assets.
+
+  To start the Express.js server:
+  1. Change directory to the folder where the Express.js app is generated:
+     \$ cd <folder_name>
+
+  2. Run the app in development mode using nodemon:
+     \$ npm run dev
+
+  3. Access the app in your web browser at http://localhost:8080/
+
+Happy hacking!
+
+EOL
+    exit 0
+fi
+
+# Rest of the script for creating the Express app goes here...
+
 figlet E X P R E S S
 
 echo -n -e '\e[32mEnter the folder name (e.g. : my_app): \e[0m'
