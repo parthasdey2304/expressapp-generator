@@ -2,8 +2,8 @@
 
 # this is the script for installing the commit binary in executable file in the /bin directory
 
-echo -e '\e[32mInstalling the required packages...'
-echo -e '\e[32mInstalling figlet, NodeJS and Npm...\e[0m'
+echo -e '\e[32m[INFO] Installing the required packages...'
+echo -e '\e[32m[INFO] Installing figlet, NodeJS and Npm...\e[0m'
 
 # Check if apt is available (Debian-based)
 if command -v apt &>/dev/null; then
@@ -24,7 +24,7 @@ elif command -v rpm &>/dev/null; then
     # Assuming Node.js and npm are available in EPEL repository for RHEL/CentOS
 
 else
-    echo -e '\e[31mNo supported package manager found. Please install figlet, Node.js, and npm manually for your distribution.\e[0m'
+    echo -e '\e[31m[INFO] No supported package manager found. Please install figlet, Node.js, and npm manually for your distribution.\e[0m'
     exit 1
 fi
 
@@ -33,6 +33,6 @@ figlet E X P R E S S
 sudo cp express /bin
 sudo chmod +x /bin/express
 
-echo -e '\e[32mInstallation successful you are good to go!!!!!\e[0m'
+echo -e '\e[32m[INFO] Installation successful you are good to go!!!!!\e[0m'
 echo -e '\e[34m[INFO] Type \e[35mexpress\e[34m in the directory where you want to make the express app and see the script do the stuff for you...\e[0m'
 echo -e '\e[31mHappy hacking!!\e[0m'
