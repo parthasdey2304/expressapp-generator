@@ -34,5 +34,5 @@ sudo cp express /bin
 sudo chmod +x /bin/express
 
 echo -e '\e[32m[INFO] Installation successful you are good to go!!!!!\e[0m'
-echo -e '\e[34m[INFO] Type \e[35mexpress\e[34m in the directory where you want to make the express app and see the script do the stuff for you...\e[0m'
+echo -e '\e[34m[INFO] Type \e[31mexpress\e[34m in the directory where you want to make the express app and see the script do the stuff for you...\e[0m'
 echo -e '\e[31mHappy hacking!!\e[0m'
