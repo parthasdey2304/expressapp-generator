@@ -10,6 +10,7 @@ This is a script to easily make express app on linux with one command!!
 
 
 # Pre-requisites
++ ## Git
 + You need to install Github in Debian based: 
 ```
 sudo apt install git -y
@@ -19,6 +20,20 @@ sudo apt install git -y
 ```
 sudo pacman -Sy --noconfirm git
 ```
+
++ ## Node and Npm
++ You need to install Github in Debian based: 
+```
+sudo apt install nodejs -y
+sudo apt install npm -y
+```
+
++ You need to install Github in Arch based:
+```
+sudo pacman -Sy --noconfirm nodejs
+sudo Pacman -Sy --noconfirm npm
+```
+
 
 # Installation
 + First clone the Github Repo :
