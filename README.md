@@ -64,6 +64,15 @@ chmod +x setup.sh
 express
 ```
 
++ For any information regarding the script after installation type..
+```
+express -h
+```
+OR
+```
+express --help
+```
+
 # Uninstalling
 + Locate to the directory with the expressapp-generator
 + Make the **remove.sh** file executable..
