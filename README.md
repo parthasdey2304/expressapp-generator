@@ -21,6 +21,7 @@ You need to install Github in Arch based:
 sudo pacman -Sy --noconfirm git
 ```
 
+<!--
 + ## Node and Npm
 You need to install Github in Debian based: 
 ```
@@ -33,6 +34,7 @@ You need to install Github in Arch based:
 sudo pacman -Sy --noconfirm nodejs
 sudo Pacman -Sy --noconfirm npm
 ```
+-->
 
 
 # Installation
@@ -60,6 +62,15 @@ chmod +x setup.sh
 + Type **express** and see the script do all the magic for you...
 ```
 express
+```
+
++ For any information regarding the script after installation type..
+```
+express -h
+```
+OR
+```
+express --help
 ```
 
 # Uninstalling
