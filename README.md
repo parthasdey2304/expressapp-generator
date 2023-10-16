@@ -10,7 +10,7 @@ This is a script to easily make express app on linux with one command!!
 
 
 # Pre-requisites
-+ ## Git
+## Git
 You need to install Github in Debian based: 
 ```
 sudo apt install git -y
