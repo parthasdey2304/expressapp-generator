@@ -9,7 +9,7 @@ This is a script to easily make express app on linux with one command!!
 -->
 
 
-Having immersed myself in the MERN stack for the past four months, I've attained proficiency. However, I identified a recurring challenge: the onerous task of crafting boilerplate code and establishing the requisite directory structure for my Express applications. Addressing this, I devised a bespoke Bash script tailored to my Linux environment. This script systematically generates a comprehensive boilerplate codebase, seamlessly incorporating the optimal directory hierarchy for my Express projects. This streamlined approach significantly enhances my development workflow, eliminating redundancies and bolstering efficiency.
+
 
 # Pre-requisites
 ## Git
